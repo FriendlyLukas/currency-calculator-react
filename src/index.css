@@ -1,0 +1,14 @@
+html {
+  font-family: "Tilt Neon";
+  font-size: large;
+  box-sizing: border-box;
+  background: url(https://wallpaperaccess.com/full/825742.jpg) fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
