@@ -1,6 +1,6 @@
 import { currencyData } from "../CurrencyData";
 
-const  Select = ({selectName})=> {    
+export const  Select = ({selectName})=> {    
     
     return (
         <div>{selectName}
@@ -16,5 +16,3 @@ const  Select = ({selectName})=> {
         </div>
     );
 };
-
-export {Select};
