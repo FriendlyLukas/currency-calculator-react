@@ -1,0 +1,11 @@
+.amount{
+    padding-bottom: 20px;
+}
+.amount__header{
+    display: flex;
+    justify-content: space-evenly;
+}
+.amount__input{
+    text-align: center;
+    margin-top: 10px;
+}

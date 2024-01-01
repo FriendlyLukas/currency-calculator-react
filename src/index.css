@@ -6,9 +6,18 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 *,
 ::after,
 ::before {
   box-sizing: inherit;
+}
+.button{
+  border-radius: 5%;
+  padding: 10px, 20px;
+  height: 50px;
+  width: 100px;
 }
