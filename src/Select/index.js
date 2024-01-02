@@ -10,7 +10,7 @@ export const  Select = ({selectName,onChange, select})=> {
             <option className="select__option"></option>
             {currencyData.map((currencyName, index) => {
                 return (
-                    <option className="select__option" value={select} key = {index.currency}>
+                    <option className="select__option" value={select} key = {index}>
                         {currencyName.currency}
                     </option>
                 )
