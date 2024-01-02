@@ -1,6 +1,10 @@
+import { useState } from "react";
 import "./styles.css"
 
-export const Amount = ({amount, onChange}) => {
+export const Amount = () => {
+    
+    const [amount, setAmount] = useState(""); 
+
     return (
     <div className="amount"> 
         <span className="amount__header">Kwota</span>
@@ -12,7 +16,7 @@ export const Amount = ({amount, onChange}) => {
         data-bm="52"
         pattern="^[0-9]*$"
         value={amount}
-        onChange={onChange}
+        onChange={({target}) => setAmount(target.value)}
         />
     </div>
     );
