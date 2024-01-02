@@ -25,6 +25,8 @@ function App() {
       const result = amount * (select1.rate / select2.rate);
       setResult(result);
     };
+    let showAmount = 0;
+    return setAmount(showAmount===amount)
   };
 
   const onFormSubmit = (event) => {
@@ -33,7 +35,7 @@ function App() {
   }
        
   return (
-    <Container>
+    <Container> 
       <form onSubmit={onFormSubmit}>
       <Header title={"Kalkulator walutowy"}/>
       <Select value = {select1.currency} onChange = {onSelectChange1} 
@@ -42,7 +44,7 @@ function App() {
       selectName={"Przelicz na"} currencyData={currencyData}/>
       <Amount amount={amount} onChange={onInputChange} />
       <button className="button" onClick={calculateResult}>Przelicz</button>
-      <ShowResult result={result} amount = {amount} select1={select1} select2={select2}/>
+      <ShowResult result={result} showAmount = {showAmount} select1={select1} select2={select2}/>
       <Footer text={"Kurs średni walut Santander Bank Polska z dnia 28.03.2023"}/>
       </form>
     </Container>
