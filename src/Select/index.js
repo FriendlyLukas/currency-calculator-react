@@ -6,7 +6,7 @@ export const  Select = ({selectName,onChange, select})=> {
     return (
         <div className="select__selectContainer">
             <span className="select__selectName">{selectName}</span>
-            <select className="select" onChange={onChange}>
+            <select title="currency" className="select" onChange={onChange}>
             <option className="select__option"></option>
             {currencyData.map((currencyName, index) => {
                 return (

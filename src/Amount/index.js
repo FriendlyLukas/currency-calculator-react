@@ -14,6 +14,7 @@ export const Amount = ({amount, onChange}) => {
         pattern="^[0-9]*$"
         value={amount}
         onChange={onChange}
+        placeholder="0.00"
         />
     </div>
     );

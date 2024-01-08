@@ -1,9 +1,9 @@
 import "./styles.css";
 
+export const ShowResult = ({showAllObject}) => (
 
-export const ShowResult = ({result,amount, select1, select2}) => (
         <div className="showResult">
-        {Number(amount).toFixed(2)} {select1.abreviation} = 
-        <strong> {Number(result).toFixed(2)} {select2.abreviation}</strong>
-        </div>
+        {Number(showAllObject.ShowAmount).toFixed(2)} {showAllObject.showSelect1} = 
+        <strong> {Number(showAllObject.ShowResult).toFixed(2)} {showAllObject.showSelect2}</strong>
+        </div>  
 );
