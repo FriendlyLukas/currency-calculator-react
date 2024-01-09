@@ -3,9 +3,9 @@
     font-size: small;
     text-align: center;
     margin: 20px 10px;
-  }
-  @media screen and (max-width:300px){
-    .footer{
-      margin: 5% 15%;
+}
+@media screen and (max-width: 300px) {
+    .footer {
+        margin: 5% 15%;
     }
-  }
+}

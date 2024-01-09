@@ -1,13 +1,12 @@
-.amount{
+.amount {
     padding-bottom: 20px;
 }
-.amount__header{
+.amount__header {
     display: flex;
     justify-content: space-evenly;
 }
-.amount__input{
+.amount__input {
     text-align: center;
     margin-top: 10px;
     padding: 5px;
-    
 }

@@ -1,23 +1,23 @@
 html {
-  font-family: "Tilt Neon";
-  font-size: large;
-  box-sizing: border-box;
-  background: url(https://wallpaperaccess.com/full/825742.jpg) fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  height: 100%;
+    font-family: 'Tilt Neon';
+    font-size: large;
+    box-sizing: border-box;
+    background: url(https://wallpaperaccess.com/full/825742.jpg) fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 *,
 ::after,
 ::before {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
-.button{
-  border-radius: 5%;
-  padding: 10px, 20px;
-  height: 50px;
-  width: 100px;
+.button {
+    border-radius: 5%;
+    padding: 10px, 20px;
+    height: 50px;
+    width: 100px;
 }
