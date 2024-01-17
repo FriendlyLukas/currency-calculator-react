@@ -4,8 +4,9 @@ import { Select } from './Select'
 import { Header } from './Header'
 import { Amount } from './Amount'
 import { useState } from 'react'
+import { Result } from './Result'
 
-export const Form = () => {
+export const Form = ({result}) => {
     const [currencyFrom, setCurrencyFrom] = useState(currencyData[0].short)
     const [currencyTo, setCurrencyTo] = useState(currencyData[1].short)
     const [amount, setAmount] = useState(0)
@@ -29,7 +30,8 @@ export const Form = () => {
         calculateResult()
     }
 
-    <form onSubmit={onFormSubmit}>
+    return (
+        <form onSubmit={onFormSubmit}>
         <Header title={'Kalkulator walutowy'} />
         <Select
             value={currencyFrom.short}
@@ -50,4 +52,5 @@ export const Form = () => {
             text={'Kurs średni walut Santander Bank Polska z dnia 28.03.2023'}
         />
     </form>
+    );
 }
