@@ -11,7 +11,7 @@ export const Amount = ({ amount, onChange }) => {
                 step="any"
                 required
                 data-bm="52"
-                pattern="^[0-9]*$"
+                pattern="/^[0-9]([.,][0-9]+)?$/"
                 value={amount}
                 onChange={onChange}
                 placeholder="0.00"

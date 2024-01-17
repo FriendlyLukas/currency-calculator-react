@@ -1,14 +1,13 @@
-.select__selectContainer{
+.select__selectContainer {
     padding-bottom: 0px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
-.select{
+.select {
     margin: 10px 82px;
     padding: 5px;
 }
-.select__option{
+.select__option {
     text-align: center;
 }
-
