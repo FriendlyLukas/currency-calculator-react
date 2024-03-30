@@ -9,7 +9,7 @@ import { Result } from './Result'
 export const Form = ({result}) => {
     const [currencyFrom, setCurrencyFrom] = useState(currencyData[0].short)
     const [currencyTo, setCurrencyTo] = useState(currencyData[1].short)
-    const [amount, setAmount] = useState(0)
+    const [amount, setAmount] = useState(0)  
 
     const onSelectChange1 = ({ target }) =>
         setCurrencyFrom(
