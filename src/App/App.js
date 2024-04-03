@@ -1,9 +1,8 @@
-import { Form } from './Container/Form'
-import { currencyData } from './Container/CurrencyData'
+import { Form } from './Form'
 import { useState } from 'react'
-import { Container } from './Container'
-
 import './index.css'
+import './App.css'
+import './currencyData'
 
 function App() {
     const [result, setResult] = useState()
@@ -29,9 +28,7 @@ function App() {
     }
 
     return (
-        <Container>
             <Form result={result} calculateResult={calculateResult} />
-        </Container>
     )
 }
 
