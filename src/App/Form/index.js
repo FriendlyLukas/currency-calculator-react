@@ -1,6 +1,6 @@
-import { currencyData } from '../currencyData'
-import { useState } from 'react'
-import { Result } from './Result'
+import { currencyData } from '../CurrencyData';
+import { useState } from 'react';
+import { Result } from './Result';
 
 export const Form = ({calculateResult, result}) => {
     const [currencyFrom, setCurrencyFrom] = useState(currencyData[0].short)
@@ -43,7 +43,7 @@ export const Form = ({calculateResult, result}) => {
             </select>
             <span className="form__select__selectName">Konwersja do</span>
             <select title="currency" className="form__select" onChange={({target}) => setCurrencyTo(target.value)}
-            value={currency}>
+            valu e={currency}>
                 {currencyData.map((currency) => (
                 <option
                     className="form__select__option"

@@ -1,10 +1,9 @@
-import { Form } from './Form'
-import { useState } from 'react'
-import './index.css'
-import './App.css'
-import './currencyData'
+import { Form } from './Form';
+import { useState } from 'react';
+import {currencyData} from './CurrencyData';
+import './index.css';
 
-function App() {
+export function App() {
     const [result, setResult] = useState()
 
     const findCurrencyFrom = (currencyFrom) => {
@@ -32,4 +31,3 @@ function App() {
     )
 }
 
-export default App

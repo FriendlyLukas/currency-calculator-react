@@ -1,3 +1,4 @@
+
 export const currencyData = [
     {
         short: 'PLN',
@@ -24,4 +25,4 @@ export const currencyData = [
         name: 'funt brytyjski',
         rate: 5.07,
     },
-]
+];
