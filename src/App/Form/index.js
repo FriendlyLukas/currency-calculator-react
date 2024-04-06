@@ -1,5 +1,6 @@
 import { currencies } from '../currencies';
 import { useState } from 'react';
+import { Result } from './Result';
 import "./styles.css"
 
 export const Form = ({calculateResult, result}) => {
@@ -54,6 +55,7 @@ export const Form = ({calculateResult, result}) => {
                 </option>
                 ))}
             </select>
+            <Result result={result}/>
             <footer className="footer">Dane kursów walut pochodzą z ...</footer>
     </form>
     );
