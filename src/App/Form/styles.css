@@ -1,6 +1,12 @@
 .form{
+    background-color:whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0px auto;
+    border-color:black;
+    border: solid 1px;
 }
 
 .form__amount {
@@ -9,16 +15,20 @@
 .form__amount__header {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 10px;
 }
 .form__amount__input {
     text-align: center;
-    margin-top: 10px;
-    padding: 5px;
+    margin: 10px auto;
+    padding:5px;
+    border-radius: 5px;
 }
 .form__header {
     margin: 20px 0;
     font-weight: bold;
     font-size: larger;
+    text-align: center;
+    padding: 5px 0px;
 }
 .form__footer {
     box-sizing: border-box;
@@ -31,15 +41,18 @@
         margin: 5% 15%;
     }
 }
-.form__select__selectContainer {
+.form__select__selectName{
     padding-bottom: 0px;
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    padding: 5px 0px;
 }
 .form__select {
     margin: 10px 82px;
     padding: 5px;
+    border-radius: 5px;
 }
 .form__select__option {
     text-align: center;

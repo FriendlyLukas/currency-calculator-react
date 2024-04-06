@@ -27,7 +27,9 @@ export default function App() {
     }
 
     return (
+            <>
             <Form result={result} calculateResult={calculateResult} />
+            </>
     )
 }
 
