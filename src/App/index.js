@@ -1,17 +1,17 @@
 import { Form } from './Form';
 import { useState } from 'react';
-import {currencyData} from './CurrencyData';
 import './index.css';
+import { currencies } from './currencies';
 
-export function App() {
+export default function App() {
     const [result, setResult] = useState()
 
     const findCurrencyFrom = (currencyFrom) => {
-        currencyData.find(({ short }) => short === currencyFrom)
+        currencies.find(({ short }) => short === currencyFrom)
     }
 
     const findCurrencyTo = (currencyTo) => {
-        currencyData.find(({ short }) => short === currencyTo)
+        currencies.find(({ short }) => short === currencyTo)
     }
 
     const calculateResult = (amount, currencyFrom, currencyTo) => {

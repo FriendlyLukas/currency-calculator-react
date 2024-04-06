@@ -1,10 +1,10 @@
-import { currencyData } from '../CurrencyData';
+import { currencies } from '../currencies';
 import { useState } from 'react';
 import { Result } from './Result';
 
 export const Form = ({calculateResult, result}) => {
-    const [currencyFrom, setCurrencyFrom] = useState(currencyData[0].short)
-    const [currencyTo, setCurrencyTo] = useState(currencyData[1].short)
+    const [currencyFrom, setCurrencyFrom] = useState(currencies[0].short)
+    const [currencyTo, setCurrencyTo] = useState(currencies[1].short)
     const [amount, setAmount] = useState(0)  
     
     const onFormSubmit = (event) => {
@@ -13,7 +13,7 @@ export const Form = ({calculateResult, result}) => {
     }
 
     return (
-        <form onSubmit={onFormSubmit}>
+        <form className="form" onSubmit={onFormSubmit}>
             <header className="form__header">Kalkulator walutowy</header>
             <span className="form__amount__header">Kwota</span>
                 <input
@@ -30,8 +30,8 @@ export const Form = ({calculateResult, result}) => {
                 />
             <span className="form__select__selectName">Konwersja z</span>
             <select title="currency" className="form__select" onChange={({target}) => setCurrencyFrom(target.value)}
-            value={currency}>
-                {currencyData.map((currency) => (
+            value={currencyFrom}>
+                {currencies.map((currency) => (
                 <option
                     className="form__select__option"
                     value={currency.short}
@@ -43,8 +43,8 @@ export const Form = ({calculateResult, result}) => {
             </select>
             <span className="form__select__selectName">Konwersja do</span>
             <select title="currency" className="form__select" onChange={({target}) => setCurrencyTo(target.value)}
-            valu e={currency}>
-                {currencyData.map((currency) => (
+            value={currencyTo}>
+                {currencies.map((currency) => (
                 <option
                     className="form__select__option"
                     value={currency.short}

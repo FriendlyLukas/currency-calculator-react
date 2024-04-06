@@ -1,5 +1,4 @@
-
-export const currencyData = [
+export const currencies = [
     {
         short: 'PLN',
         name: 'złoty polski',
@@ -24,5 +23,5 @@ export const currencyData = [
         short: 'GBP',
         name: 'funt brytyjski',
         rate: 5.07,
-    },
+    }
 ];
