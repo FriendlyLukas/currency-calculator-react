@@ -32,13 +32,16 @@
 }
 .form__footer {
     box-sizing: border-box;
-    font-size: small;
+    font-size:x-small;
     text-align: center;
     margin: 20px 10px;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 280px) {
     .form__footer {
         margin: 5% 15%;
+    }
+    .form{
+        max-width: 270px;
     }
 }
 .form__select__selectName{
@@ -49,11 +52,17 @@
     flex-direction: column;
     padding: 5px 0px;
 }
-.form__select {
-    margin: 10px 82px;
-    padding: 5px;
+.form__select{
+    margin: 10px auto;
+    padding: 5px 20px;
     border-radius: 5px;
 }
 .form__select__option {
-    text-align: center;
+    text-align:justify;
+}
+
+.form__button{
+    margin: 10px auto;
+    padding: 5px 50px;
+    border-radius: 5px;
 }
