@@ -7,21 +7,21 @@ export const currencies = [
     {
         short: 'EUR',
         name: 'euro',
-        rate: 4.34,
+        rate: 4.2666,
     },
     {
         short: 'USD',
         name: 'dolar amerykański',
-        rate: 4.03,
+        rate: 3.9983,
     },
     {
         short: 'NOK',
         name: 'korona norweska',
-        rate: 0.37,
+        rate: 0.3683,
     },
     {
         short: 'GBP',
-        name: 'funt brytyjski',
-        rate: 5.07,
-    }
+        name: 'funt szterling',
+        rate: 5.0001,
+    },
 ];

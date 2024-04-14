@@ -1,8 +1,8 @@
-.result{
+.result {
     font-size: larger;
     margin: auto;
     text-align: center;
 }
-.result__amount{
+.result__amount {
     word-wrap: break-word;
 }

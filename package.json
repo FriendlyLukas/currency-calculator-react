@@ -28,9 +28,9 @@
         ]
     },
     "prettier": {
-        "trailingComma": "es6",
+        "trailingComma": "all",
         "tabWidth": 4,
-        "semi": false,
+        "semi": true,
         "singleQuote": true
     },
     "browserslist": {
@@ -44,5 +44,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "prettier": "^3.2.5"
     }
 }
