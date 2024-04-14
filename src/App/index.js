@@ -4,19 +4,16 @@ import './index.css';
 import { currencies } from './currencies';
 
 export default function App() {
-    const [result, setResult] = useState()
+    const [result, setResult] = useState();
 
-    const findCurrencyFrom = (currencyFrom) => {
-        currencies.find(({ short }) => short === currencyFrom)
-    }
-
-    const findCurrencyTo = (currencyTo) => {
-        currencies.find(({ short }) => short === currencyTo)
-    }
-
-    const calculateResult = (amount, currencyFrom, currencyTo) => {
-        const rateFrom = findCurrencyFrom()
-        const rateTo = findCurrencyTo()
+    const calculateResult = (currencyFrom, currencyTo, amount) => {
+        
+        const rateFrom = currencies
+        .find(({ short }) => short === currencyFrom)
+        .rate;
+        const rateTo = currencies
+        .find(({ short }) => short === currencyTo)
+        .rate;
 
         setResult({
             sourceAmount: +amount,
@@ -28,7 +25,10 @@ export default function App() {
 
     return (
             <>
-            <Form result={result} calculateResult={calculateResult} />
+            <Form 
+            result={result} 
+            calculateResult={calculateResult} 
+            />
             </>
     )
 }
