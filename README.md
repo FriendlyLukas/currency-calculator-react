@@ -10,6 +10,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 + Breaking big words/numbers
 + Using 1 tabel with all neccesary data for whole project
 
+## Demo
+
+![currency-calculator-react-demo](https://github.com/FriendlyLukas/currency-calculator-react/assets/129426521/4a8b3f8e-d8a4-4ff5-b653-c464d61494a3)
+
 ## Available Scripts
 
 In the project directory, you can run:
