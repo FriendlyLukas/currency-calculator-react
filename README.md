@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## What have I lernt?
+
++ UseStates (hooks)
++ Controlled components
++ Passing props between childs and parent components
++ Breaking big words/numbers
++ Using 1 tabel with all neccesary data for whole project
+
 ## Available Scripts
 
 In the project directory, you can run:
